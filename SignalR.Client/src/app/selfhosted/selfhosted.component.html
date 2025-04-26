@@ -1,0 +1,64 @@
+<!-- <div class="container-fluid">
+  <button (click)="cleanAll()">Clean Notifications</button>
+
+  Groups:
+  <ul>
+    <li *ngFor="let group of availableGroups" (click)="joinGroup(group)">
+      {{ group }}
+    </li>
+  </ul>
+
+  &nbsp;
+  <div style="padding: 2px"></div>
+
+  <div *ngIf="isConnected">
+    <button (click)="stopConnection()">Stop Connection</button>
+    <div style="padding: 2px"></div>
+  </div>
+
+  <div *ngIf="!isConnected">
+    <button (click)="connectToSignalR()">Try Reconnect</button>
+    <div style="padding: 2px"></div>
+  </div>
+
+  <div>
+    Connection Count :
+    {{ connectedClientCount }}
+  </div>
+  <div style="padding: 2px"></div>
+
+  Connected Groups :
+  <span *ngFor="let group of connectedGroups; let i = index"
+    >{{ group }}{{ i + 1 == connectedGroups.length ? "" : ", " }}</span
+  >
+
+  <div style="padding: 2px"></div>
+
+  Message Count : {{ messages ? messages.length : 0 }}
+  <div style="padding: 2px"></div>
+
+  <div class="row" *ngIf="messages.length > 0">
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <tbody>
+          <tr *ngFor="let message of messages; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ message.content }}</td>
+            <td>{{ message.title }}</td>
+            <td (click)="cleanAll(message.id)" style="cursor: pointer">
+              <strong>X</strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="messages.length <= 0">
+    <span>No messages</span>
+  </div>
+</div> -->
+
+<!-- <app-message-box></app-message-box> -->
+
+<app-register-user></app-register-user>
